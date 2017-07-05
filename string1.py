@@ -64,8 +64,7 @@ def fix_start(s):
 #   'dog', 'dinner' -> 'dig donner'
 # Assume a and b are length 2 or more.
 def mix_up(a, b):
-  # +++your code here+++
-  return
+  return b[0:2]+a[2:]+" "+a[0:2]+b[2:]
 
 
 # Provided simple test() function used in main() to print
@@ -75,7 +74,7 @@ def test(got, expected):
     prefix = ' OK '
   else:
     prefix = '  X '
-    print '%s got: %s expected: %s' % (prefix, repr(got), repr(expected))
+  print '%s got: %s expected: %s' % (prefix, repr(got), repr(expected))
 
 
 # Provided main() calls the above functions with interesting inputs,
